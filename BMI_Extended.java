@@ -1,5 +1,5 @@
 /********************************************************************************************
- * File Name: BMI.java
+ * File Name: BMI_Extended.java
  * Due Date: 9/25/15 
  * 
  * Author: Jonndre King
@@ -13,7 +13,7 @@
 
 import java.util.Scanner;
 
-public class BMI
+public class BMI_Extended
 {
   public static void main(String[] args)
   {
@@ -90,7 +90,40 @@ System.out.println ("***********************************************************
   
 System.out.println ("\n");      
       
-System.out.print(fullname + " your BMI score is: " +bmi);
+System.out.print(fullname + " your BMI score is: " +bmi);      
+      
+     
+      
+    if(bmi < 18.5) {
+        System.out.println(", indicating your weight is in the Underweight category for adults of your height.");
+         
+        System.out.println ("\n"); 
+        System.out.println ("For your height, a normal weight range would be from 115 to 154 pounds."); 
+        System.out.println ("\n");
+        System.out.println ("Talk with your healthcare provider to determine possible causes of underweight and if you need to gain weight."); 
+        
+    }
+      
+    if(bmi > 18.5 && bmi < 24.9) { 
+        System.out.println(", indicating your weight is in the Normal category for adults of your height.");
+         
+        System.out.println ("\n"); 
+        System.out.println ("For your height, a normal weight range would be from 115 to 154 pounds."); 
+        System.out.println ("\n");
+        System.out.println ("Maintaining a healthy weight may reduce the risk of chronic diseases associated with overweight and obesity. For information about the importance of a healthy diet and physical activity in maintaining a healthy weight, visit Preventing Weight Gain."); 
+    }
+    if(bmi > 25 && bmi < 29.9) {
+        System.out.println(", indicating your weight is in the Overweight category for adults of your height.");
+        
+        System.out.println ("\n");
+        System.out.println ("For your height, a normal weight range would be from 115 to 154 pounds. People who are overweight or obese are at higher risk for chronic conditions such as high blood pressure, diabetes, and high cholesterol. Anyone who is overweight should try to avoid gaining additional weight. Additionally, if you are overweight with other risk factors (such as high LDL cholesterol, low HDL cholesterol, or high blood pressure), you should try to lose weight. Even a small weight loss (just 10% of your current weight) may help lower the risk of disease. Talk with your healthcare provider to determine appropriate ways to lose weight. For information about the importance of a healthy diet and physical activity in reaching a healthy weight, visit Healthy Weight."); 
+    }
+    if(bmi > 30) {
+       System.out.println(", indicating your weight is in the Obese category for adults of your height.");
+         
+        System.out.println ("\n"); 
+        System.out.println ("For your height, a normal weight range would be from 115 to 154 pounds.Anyone who is overweight should try to avoid gaining additional weight. Additionally, if you are overweight with other risk factors (such as high LDL cholesterol, low HDL cholesterol, or high blood pressure), you should try to lose weight. Even a small weight loss (just 10% of your current weight) may help lower the risk of disease. Talk with your healthcare provider to determine appropriate ways to lose weight. For information about the importance of a healthy diet and physical activity in reaching a healthy weight, visit Healthy Weight."); 
+    } 
       
 System.out.println ("\n");      
       
